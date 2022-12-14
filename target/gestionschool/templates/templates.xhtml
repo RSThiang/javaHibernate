@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/arya-blue.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css"/>
+
+
+</h:head>
+<style type="text/javascript">
+
+
+</style>
+
+<h:body>
+    <ui:composition>
+    <div class="card">
+        <div class="flex flex-column card-container" style="background: url(#{resource[ 'slides:img.jpg']})">
+            <div class="font-bold"  style="size: 7px; ">
+
+              <div class="row">
+                  <p:spacer width="50px"/>
+                  <div class="col-md-2">
+                      <h:graphicImage library="slides" name="téléchargement (1).png" alt="Valladolid" style="height: 100px;width: 150px"/>
+                  </div>
+                 <div class="col-md-1">
+                     <h:outputText value="Sen-School" style="text-align: left;stop-color: whitesmoke;font-size: xx-large"/>
+                 </div>
+                  <div class="col-md-8" style="text-align: center">
+                      <p:spacer height="50px"/>
+                      <h:outputText value="Notre formation votre reuissite" style=" color: darkgray" />
+                   </div>
+             </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="card">
+        <p:splitter style="height: 800px">
+            <p:splitterPanel size="20"  >
+
+                <div class="card">
+                    <div class="speeddial-linear-demo" style="position: center" >
+                        <b:dropButton value="gestionEcole" styleClass="">
+                            <b:navLink  outcome="ecoleList" value="Etablissements"/>
+                            <b:navLink  outcome="#" value=""/>
+
+                        </b:dropButton>
+                        <b:dropButton value="Personnel" styleClass="sp">
+                            <b:navLink  outcome="#" value="Administration"/>
+                            <b:navLink  outcome="#" value=""/>
+
+                        </b:dropButton>
+                        <b:dropButton value="Eleves" styleClass="sp">
+                            <b:navLink  outcome="ecoleList" value="inscription"/>
+                            <b:navLink  outcome="ecoleList" value="eleves"/>
+                            <b:navLink  outcome="ecoleList" value="parent"/>
+                        </b:dropButton>
+                    </div>
+
+                </div>
+
+
+            </p:splitterPanel>
+            <p:splitterPanel size="80">
+
+
+            </p:splitterPanel>
+
+        </p:splitter>
+    </div>
+    </ui:composition>
+</h:body>
+</html>

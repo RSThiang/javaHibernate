@@ -1,0 +1,56 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+<persistence-unit name="persistenceUniName" transaction-type="RESOURCE_LOCAL">
+
+    <class>Entity.Ecole</class>
+    <class>Entity.Batiment</class>
+    <class>Entity.Classe</class>
+    <class>Entity.Eleve</class>
+    <class>Entity.Inscription</class>
+    <class>Entity.Parents</class>
+    <class>Entity.Promotion</class>
+    <class>Entity.Salle</class>
+    <class>Entity.Serie</class>
+    <class>Entity.Niveau</class>
+    <class>Entity.CycleScolaire</class>
+    <class>Entity.Deliberation</class>
+    <class>Entity.ActiviteScolaire</class>
+    <class>Entity.Cantine</class>
+    <class>Entity.Chauffeur</class>
+    <class>Entity.ChauffeurTransports</class>
+    <class>Entity.EcoleActiviteScolaires</class>
+    <class>Entity.EleveCantines</class>
+    <class>Entity.EleveTransports</class>
+    <class>Entity.EmploiDuTemps</class>
+    <class>Entity.Evaluation</class>
+    <class>Entity.EvaluationClasses</class>
+    <class>Entity.Login</class>
+    <class>Entity.Matiere</class>
+    <class>Entity.NoteCours</class>
+    <class>Entity.PayementScolaire</class>
+    <class>Entity.Personnel</class>
+    <class>Entity.PersonnelClasses</class>
+    <class>Entity.PersonnelEcoles</class>
+    <class>Entity.PersonnelMatiere</class>
+    <class>Entity.Presence</class>
+    <class>Entity.ProgrammeReunion</class>
+    <class>Entity.Transport</class>
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Gestionscolaire"/>
+        <property name="javax.persistence.jdbc.user" value="postgres"/>
+        <property name="javax.persistence.jdbc.password" value="rokhy"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+        <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost:5432/Gestionscolaire"/>
+        <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+    </properties>
+</persistence-unit>
+
+
+</persistence>

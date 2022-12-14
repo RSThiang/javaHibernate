@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Gestionscolaire@localhost" uuid="613edfb1-fe74-4ca7-9887-c60dd82a7a11">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/Gestionscolaire</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="persistenceUniName/OpenJPA" uuid="74921adb-b3a7-4a08-8ce0-c3b8481c54b8">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>OpenJPA
+
+C:/Users/HP/IdeaProjects/gestionschool/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/Gestionscolaire</jdbc-url>
+    </data-source>
+  </component>
+</project>

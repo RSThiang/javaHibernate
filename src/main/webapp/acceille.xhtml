@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+>
+
+<f:view>
+    <h:head>
+        <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/arya-blue.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"  />
+
+
+    </h:head>
+    <h:body>
+
+    <div class="card">
+        <div class="flex flex-column card-container blue-container">
+            <div class="flex align-items-center justify-content-center h-3rem bg-blue-100 font-bold ">
+                <h1>ECOLE D'ENSEIGNEMENT</h1>
+
+            </div>
+            <div class="flex align-items-center justify-content-center h-3rem bg-blue-100 font-bold ">
+
+                <h4>PRESCOLAIRE, PRIMAIRE, MOYEN SECONDAIRE ET LYCEE</h4>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="card">
+            <p:splitter style="height: 500px">
+                <p:splitterPanel size="20" style="background-color:moccasin">
+                    <b:buttonGroup orientation="vertical" styleClass="downwards">
+                        <b:dropButton value="Gestion Utilisateurs">
+                            <b:navLink value="Eleves" />
+                            <b:navLink value="Enseignants" />
+                            <b:navLink value="Surveillants" />
+                            <b:navLink value="Secretaires" />
+                            <b:navLink value="Comptable" />
+                            <b:navLink value="Direction" />
+                            <b:navLink value="Prefets" />
+                            <b:navLink value="Parents" />
+                        </b:dropButton>
+                        <b:dropButton value="Gestion Inscription/réinscription">
+                            <b:navLink value="Inscription"/>
+                            <b:navLink value="Reinscription"/>
+                            <b:navLink value="Payement Scolaire"/>
+                        </b:dropButton>
+                        <b:dropButton value="Gestion Enseignements">
+                            <b:navLink value="Ecoles" />
+
+                            <b:navLink value="Cycle Scolaire"/>
+                            <b:navLink value="Matiers"/>
+
+                        </b:dropButton>
+                        <b:dropButton value="Gestion Emploi du temps">
+                            <b:navLink value=""/>
+                        </b:dropButton>
+                        <b:dropButton value="Gestion Activités Culturelles">
+                            <b:navLink value=""/>
+                        </b:dropButton>
+                        <b:dropButton value="Gestion Cantine">
+                            <b:navLink value=""/>
+                        </b:dropButton>
+                        <b:dropButton value="Gestion Transport">
+                            <b:navLink value=""/>
+                        </b:dropButton>
+                    </b:buttonGroup>
+
+                </p:splitterPanel>
+                <p:splitterPanel size="80">
+                    <b:navBar brand="Brand" brandHref="#" fluid="true">
+                        <b:navbarLinks>
+                            <b:navLink value="Link" href="#"></b:navLink>
+                            <b:navLink value="Link" href="#"></b:navLink>
+                            <b:dropMenu value="Dropdown" iconAwesome="birthday-cake">
+                                <b:navLink value="Action" href="#"></b:navLink>
+                                <b:navLink value="Another action" href="#"></b:navLink>
+                                <b:navLink value="Something else here" href="#"></b:navLink>
+                                <b:navLink></b:navLink>
+                                <b:navLink header="Nav header"></b:navLink>
+                                <b:navLink value="Separated link" href="#"></b:navLink>
+                                <b:dropMenu value="Nested submenu" iconAwesome="birthday-cake" iconAlign="right">
+                                    <b:navLink value="You can nest menus" href="#"></b:navLink>
+                                    <b:dropMenu value="Nested sub-submenu">
+                                        <b:navLink value="... as deep as ..." href="#"></b:navLink>
+                                        <b:dropMenu value="Nested sub-sub-submenu">
+                                            <b:navLink value="... you want!" href="#"></b:navLink>
+                                        </b:dropMenu>
+                                    </b:dropMenu>
+
+                                </b:dropMenu>
+                                <b:navLink value="One more separated link" href="#"></b:navLink>
+                            </b:dropMenu>
+                        </b:navbarLinks>
+
+                        <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                        <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+                        <b:navbarLinks pull="right" styleClass="hidden-xs">
+                            <b:navLink value="Link" href="#"></b:navLink>
+                            <b:dropMenu value="Dropdown">
+                                <b:navLink value="Action" href="#"></b:navLink>
+                                <b:navLink value="Another action" href="#"></b:navLink>
+                                <b:navLink value="Something else here" href="#"></b:navLink>
+                                <b:navLink></b:navLink>
+                                <b:navLink header="Nav header"></b:navLink>
+                                <b:navLink value="Separated link" href="#"></b:navLink>
+                                <b:navLink value="One more separated link" href="#"></b:navLink>
+                            </b:dropMenu>
+                        </b:navbarLinks>
+                    </b:navBar>
+
+                </p:splitterPanel>
+            </p:splitter>
+        </div>
+
+        <b:dropMenu value="Gestion Batiment">
+            <b:navLink value="Batiments"  update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+            <b:navLink value="Salles" update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+        </b:dropMenu>
+        <b:dropMenu value="Gestion Enseignement">
+            <b:navLink value="Promotion"  update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+            <b:navLink value="Classe" update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+            <b:navLink value="Serie" update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+        </b:dropMenu>
+        <b:dropMenu Value="Gestion INscripton">
+            <b:navLink value="Inscription"  update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+
+        </b:dropMenu>
+        <b:dropMenu value="Gestion Utilisateur">
+            <b:navLink value="Eleves"  update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+            <b:navLink value="Parents d'eleves" update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+            <b:navLink value="Personnel" update="@form @(.content)"
+                       onclick="ajax:navigationBeans.setPage('#')" />
+
+        </b:dropMenu>
+    </h:body>
+</f:view>
+</html>

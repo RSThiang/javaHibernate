@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+>
+
+     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Ecole List</title>
+    </head>
+    <h:body>
+        <f:view>
+
+            <ui:include src="CreateEcole.xhtml"/>
+            <h1>Ecole List</h1>
+            <h:form>
+              <h:commandButton action="createEcole" value="Create"/>
+                <h:commandButton value="Ajouter un etablissment" action="#" onclick="myFunction()"/>
+
+               <h:dataTable value="#{ecoleDao.listes}" var='item' border="1" cellpadding="2" cellspacing="0">
+                  <h:column>
+                      <f:facet name="header">
+                      <h:outputText value="idEcole"/>
+                      </f:facet>
+                       <h:outputText value="#{item.idEcole}"/>
+                  </h:column>
+                  <h:column>
+                      <f:facet name="header">
+                      <h:outputText value="addresseecole"/>
+                      </f:facet>
+                      <h:outputText value="#{item.addresseecole}"/>
+                  </h:column>
+                  <h:column>
+                      <f:facet name="header">
+                      <h:outputText value="nomecole"/>
+                      </f:facet>
+                      <h:outputText value="#{item.nomecole}"/>
+                  </h:column>
+                  <h:column>
+                      <h:commandButton value="View" action="#{ecoleDao.l}">
+                          <f:param name="id" value="#{item.idEcole}"/>
+                      </h:commandButton>&nbsp;
+                      <h:commandButton value="Edit" action="editEcole">
+                          <f:param name="id" value="#{item.idEcole}"/>
+                      </h:commandButton>&nbsp;
+                      <h:commandButton value="Delete" action="#">
+                          <f:param name="id" value="#"/>
+                      </h:commandButton>
+                  </h:column>
+              </h:dataTable>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>

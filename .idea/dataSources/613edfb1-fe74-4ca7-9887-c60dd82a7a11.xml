@@ -1,0 +1,2391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Gestionscolaire@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.17">
+    <root id="1">
+      <ServerVersion>14.1</ServerVersion>
+      <StartupTime>1668849822</StartupTime>
+    </root>
+    <database id="2" parent="1" name="Gestionscolaire">
+      <ObjectId>60255</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>11660</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Relations>sequence|table|60272|60273|1
+sequence|table|60354|60355|1
+sequence|table|60382|60383|1
+sequence|table|60404|60405|1
+sequence|table|60396|60397|1
+sequence|table|60368|60369|1
+sequence|table|60376|60377|1
+sequence|table|60388|60389|1
+sequence|table|60360|60361|1
+sequence|table|60348|60349|1
+sequence|table|60292|60293|1
+sequence|table|60306|60307|1
+sequence|table|60286|60287|1
+sequence|table|60340|60341|1
+sequence|table|60334|60335|1
+sequence|table|60300|60301|1
+sequence|table|60312|60313|1
+sequence|table|60320|60321|1
+sequence|table|60280|60281|1
+sequence|table|60482|60483|1
+sequence|table|60476|60477|1
+sequence|table|60440|60441|1
+sequence|table|60426|60427|1
+sequence|table|60420|60421|1
+sequence|table|60446|60447|1
+sequence|table|60464|60465|1
+sequence|table|60470|60471|1
+sequence|table|60434|60435|1
+sequence|table|60452|60453|1
+sequence|table|60458|60459|1
+sequence|table|60412|60413|1
+sequence|table|60808|60788|1
+</Relations>
+    </database>
+    <database id="3" parent="1" name="academicnetDB">
+      <ObjectId>60264</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="personenne">
+      <ObjectId>38322</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="postgres">
+      <ObjectId>13754</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="testexo">
+      <ObjectId>54191</ObjectId>
+      <Owner>openpg</Owner>
+    </database>
+    <role id="7" parent="1" name="openpg">
+      <ObjectId>16394</ObjectId>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+    </role>
+    <role id="8" parent="1" name="pg_database_owner">
+      <ObjectId>6171</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="17" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="18" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="19" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="20" parent="2" name="information_schema">
+      <ObjectId>13388</ObjectId>
+      <StateNumber>533</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="21" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>526</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="22" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>527</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>11661</IntrospectionStateNumber>
+      <Current>1</Current>
+    </schema>
+    <access-method id="23" parent="2" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
+    </access-method>
+    <access-method id="24" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="25" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="26" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="27" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="28" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="29" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="30" parent="2" name="plpgsql">
+      <ObjectId>13740</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>687</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="31" parent="22" name="hibernate_sequence">
+      <ObjectId>60787</ObjectId>
+      <StateNumber>11599</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="32" parent="22" name="activite_scolaire_id_activite_seq">
+      <ObjectId>60272</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="33" parent="22" name="batiment_id_batiment_seq">
+      <ObjectId>60280</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="34" parent="22" name="cantine_id_cantine_seq">
+      <ObjectId>60286</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="35" parent="22" name="chauffeur_id_chauffeur_seq">
+      <ObjectId>60292</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="36" parent="22" name="chauffeur_transports_id_seq">
+      <ObjectId>60300</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="37" parent="22" name="classe_id_classe_seq">
+      <ObjectId>60306</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="38" parent="22" name="cycle_scolaire_id_cycle_seq">
+      <ObjectId>60312</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="39" parent="22" name="deliberation_id_deliberation_seq">
+      <ObjectId>60320</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="40" parent="22" name="ecole_activite_scolaires_id_seq">
+      <ObjectId>60334</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="41" parent="22" name="ecole_idEcole_seq">
+      <ObjectId>60808</ObjectId>
+      <StateNumber>11616</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="42" parent="22" name="eleve_cantines_id_seq">
+      <ObjectId>60348</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="43" parent="22" name="eleve_id_eleve_seq">
+      <ObjectId>60340</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="44" parent="22" name="eleve_transports_id_seq">
+      <ObjectId>60354</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="45" parent="22" name="emploi_du_temps_id_emploi_du_temps_seq">
+      <ObjectId>60360</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="46" parent="22" name="evaluation_classes_id_seq">
+      <ObjectId>60376</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="47" parent="22" name="evaluation_id_evaluation_seq">
+      <ObjectId>60368</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="48" parent="22" name="inscription_id_inscription_seq">
+      <ObjectId>60382</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="49" parent="22" name="matiere_id_matiere_seq">
+      <ObjectId>60388</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="50" parent="22" name="niveau_id_niveau_seq">
+      <ObjectId>60396</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="51" parent="22" name="note_cours_id_note_cours_seq">
+      <ObjectId>60404</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="52" parent="22" name="parents_id_parents_seq">
+      <ObjectId>60412</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="53" parent="22" name="payement_scolaire_id_payement_seq">
+      <ObjectId>60420</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="54" parent="22" name="personnel_classes_id_seq">
+      <ObjectId>60434</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="55" parent="22" name="personnel_ecoles_id_seq">
+      <ObjectId>60440</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="56" parent="22" name="personnel_id_personnel_seq">
+      <ObjectId>60426</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="57" parent="22" name="personnel_matiere_id_seq">
+      <ObjectId>60446</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="58" parent="22" name="presence_id_presence_seq">
+      <ObjectId>60452</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="59" parent="22" name="programme_reunion_id_programme_seq">
+      <ObjectId>60458</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="60" parent="22" name="promotion_id_promotion_seq">
+      <ObjectId>60464</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="61" parent="22" name="salle_id_salle_seq">
+      <ObjectId>60470</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="62" parent="22" name="serie_id_serie_seq">
+      <ObjectId>60476</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="63" parent="22" name="transport_id_transport_seq">
+      <ObjectId>60482</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="64" parent="22" name="activite_scolaire">
+      <ObjectId>60273</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="65" parent="22" name="batiment">
+      <ObjectId>60281</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="66" parent="22" name="cantine">
+      <ObjectId>60287</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="67" parent="22" name="chauffeur">
+      <ObjectId>60293</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="68" parent="22" name="chauffeur_transports">
+      <ObjectId>60301</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="69" parent="22" name="classe">
+      <ObjectId>60307</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="70" parent="22" name="cycle_scolaire">
+      <ObjectId>60313</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="71" parent="22" name="deliberation">
+      <ObjectId>60321</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="72" parent="22" name="ecole">
+      <ObjectId>60788</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11649</StateNumber>
+    </table>
+    <table id="73" parent="22" name="ecole_activite_scolaires">
+      <ObjectId>60335</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="74" parent="22" name="eleve">
+      <ObjectId>60341</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="75" parent="22" name="eleve_cantines">
+      <ObjectId>60349</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="76" parent="22" name="eleve_transports">
+      <ObjectId>60355</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="77" parent="22" name="emploi_du_temps">
+      <ObjectId>60361</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="78" parent="22" name="evaluation">
+      <ObjectId>60369</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="79" parent="22" name="evaluation_classes">
+      <ObjectId>60377</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="80" parent="22" name="inscription">
+      <ObjectId>60383</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="81" parent="22" name="login">
+      <ObjectId>60795</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11601</StateNumber>
+    </table>
+    <table id="82" parent="22" name="matiere">
+      <ObjectId>60389</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="83" parent="22" name="niveau">
+      <ObjectId>60397</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="84" parent="22" name="note_cours">
+      <ObjectId>60405</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="85" parent="22" name="parents">
+      <ObjectId>60413</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="86" parent="22" name="payement_scolaire">
+      <ObjectId>60421</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="87" parent="22" name="personnel">
+      <ObjectId>60427</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="88" parent="22" name="personnel_classes">
+      <ObjectId>60435</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="89" parent="22" name="personnel_ecoles">
+      <ObjectId>60441</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="90" parent="22" name="personnel_matiere">
+      <ObjectId>60447</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="91" parent="22" name="presence">
+      <ObjectId>60453</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="92" parent="22" name="programme_reunion">
+      <ObjectId>60459</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="93" parent="22" name="promotion">
+      <ObjectId>60465</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="94" parent="22" name="salle">
+      <ObjectId>60471</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="95" parent="22" name="serie">
+      <ObjectId>60477</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <table id="96" parent="22" name="transport">
+      <ObjectId>60483</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>11200</StateNumber>
+    </table>
+    <column id="97" parent="64" name="id_activite">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="98" parent="64" name="date">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="99" parent="64" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="100" parent="64" name="lieu">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="101" parent="64" name="nom_activite">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="102" parent="64" name="activite_scolaire_pkey">
+      <ObjectId>60278</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_activite</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="103" parent="64" name="activite_scolaire_pkey">
+      <ObjectId>60279</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_activite</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>activite_scolaire_pkey</UnderlyingIndexName>
+    </key>
+    <column id="104" parent="65" name="id_batiment">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="105" parent="65" name="nom_batiment">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="106" parent="65" name="ecolebyidecole_id_ecole">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="107" parent="65" name="batiment_pkey">
+      <ObjectId>60284</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_batiment</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="108" parent="65" name="batiment_pkey">
+      <ObjectId>60285</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_batiment</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>batiment_pkey</UnderlyingIndexName>
+    </key>
+    <column id="109" parent="66" name="id_cantine">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="110" parent="66" name="montant">
+      <Position>2</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="111" parent="66" name="nom_dejeuner">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="112" parent="66" name="cantine_pkey">
+      <ObjectId>60290</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_cantine</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="113" parent="66" name="cantine_pkey">
+      <ObjectId>60291</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_cantine</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>cantine_pkey</UnderlyingIndexName>
+    </key>
+    <column id="114" parent="67" name="id_chauffeur">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="115" parent="67" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="116" parent="67" name="nom_chauffeur">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="117" parent="67" name="prenom_chauffeur">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="118" parent="67" name="tel">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="119" parent="67" name="chauffeur_pkey">
+      <ObjectId>60298</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_chauffeur</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="120" parent="67" name="chauffeur_pkey">
+      <ObjectId>60299</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_chauffeur</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>chauffeur_pkey</UnderlyingIndexName>
+    </key>
+    <column id="121" parent="68" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="122" parent="68" name="chauffeurbyidchauffeur_id_chauffeur">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="123" parent="68" name="transportbyidtransport_id_transport">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="124" parent="68" name="chauffeur_transports_pkey">
+      <ObjectId>60304</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="125" parent="68" name="chauffeur_transports_pkey">
+      <ObjectId>60305</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>chauffeur_transports_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="126" parent="68" name="fkiyxx13w3iuil717aiv2ml8kmj">
+      <ObjectId>60500</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>chauffeurbyidchauffeur_id_chauffeur</ColNames>
+      <RefTableId>60293</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>chauffeur</RefTableName>
+      <RefKeyName>chauffeur_pkey</RefKeyName>
+      <RefColNames>id_chauffeur</RefColNames>
+    </foreign-key>
+    <foreign-key id="127" parent="68" name="fkaaw5k92qp0kmxllb7gud3e1o8">
+      <ObjectId>60495</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>transportbyidtransport_id_transport</ColNames>
+      <RefTableId>60483</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>transport</RefTableName>
+      <RefKeyName>transport_pkey</RefKeyName>
+      <RefColNames>id_transport</RefColNames>
+    </foreign-key>
+    <column id="128" parent="69" name="id_classe">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="129" parent="69" name="indice_classe">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="130" parent="69" name="id_niveau">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="131" parent="69" name="id_serie">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="132" parent="69" name="classe_pkey">
+      <ObjectId>60310</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_classe</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="133" parent="69" name="classe_pkey">
+      <ObjectId>60311</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_classe</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>classe_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="134" parent="69" name="fkfj27nb9q583ch50rev489e1o1">
+      <ObjectId>60505</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_niveau</ColNames>
+      <RefTableId>60397</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>niveau</RefTableName>
+      <RefKeyName>niveau_pkey</RefKeyName>
+      <RefColNames>id_niveau</RefColNames>
+    </foreign-key>
+    <foreign-key id="135" parent="69" name="fkn6nq4m4umwf7fwx5mdvu484mc">
+      <ObjectId>60510</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_serie</ColNames>
+      <RefTableId>60477</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>serie</RefTableName>
+      <RefKeyName>serie_pkey</RefKeyName>
+      <RefColNames>id_serie</RefColNames>
+    </foreign-key>
+    <column id="136" parent="70" name="id_cycle">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="137" parent="70" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="138" parent="70" name="nom_cycle">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="139" parent="70" name="id_ecole">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="140" parent="70" name="cycle_scolaire_pkey">
+      <ObjectId>60318</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_cycle</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="141" parent="70" name="cycle_scolaire_pkey">
+      <ObjectId>60319</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_cycle</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>cycle_scolaire_pkey</UnderlyingIndexName>
+    </key>
+    <column id="142" parent="71" name="id_deliberation">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="143" parent="71" name="date_deliberation">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="144" parent="71" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="145" parent="71" name="id_evaluation">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="146" parent="71" name="deliberation_pkey">
+      <ObjectId>60324</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_deliberation</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="147" parent="71" name="deliberation_pkey">
+      <ObjectId>60325</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_deliberation</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>deliberation_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="148" parent="71" name="fkahqxe2e7o4q9nx6fj9l3yxbgo">
+      <ObjectId>60520</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_evaluation</ColNames>
+      <RefTableId>60369</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>evaluation</RefTableName>
+      <RefKeyName>evaluation_pkey</RefKeyName>
+      <RefColNames>id_evaluation</RefColNames>
+    </foreign-key>
+    <column id="149" parent="72" name="idEcole">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11616</StateNumber>
+      <TypeId>23</TypeId>
+      <IdentityKind>always</IdentityKind>
+      <Computed>1</Computed>
+    </column>
+    <column id="150" parent="72" name="addresseecole">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11619</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="151" parent="72" name="nomecole">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11620</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="152" parent="72" name="ecole_pkey">
+      <ObjectId>60800</ObjectId>
+      <StateNumber>11616</StateNumber>
+      <ColNames>idEcole</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="153" parent="72" name="ecole_pkey">
+      <ObjectId>60801</ObjectId>
+      <StateNumber>11616</StateNumber>
+      <ColNames>idEcole</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>ecole_pkey</UnderlyingIndexName>
+    </key>
+    <column id="154" parent="73" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="155" parent="73" name="id_activite">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="156" parent="73" name="id_ecole">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="157" parent="73" name="ecole_activite_scolaires_pkey">
+      <ObjectId>60338</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="158" parent="73" name="ecole_activite_scolaires_pkey">
+      <ObjectId>60339</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>ecole_activite_scolaires_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="159" parent="73" name="fke5wpwufx50uscf20qn4ke5kr3">
+      <ObjectId>60530</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_activite</ColNames>
+      <RefTableId>60273</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>activite_scolaire</RefTableName>
+      <RefKeyName>activite_scolaire_pkey</RefKeyName>
+      <RefColNames>id_activite</RefColNames>
+    </foreign-key>
+    <column id="160" parent="74" name="id_eleve">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="161" parent="74" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="162" parent="74" name="matricule">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="163" parent="74" name="nom_eleve">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="164" parent="74" name="password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="165" parent="74" name="prenom_eleve">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="166" parent="74" name="tel">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="167" parent="74" name="type">
+      <Position>8</Position>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="168" parent="74" name="id_classe">
+      <Position>9</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="169" parent="74" name="id_deliberation">
+      <Position>10</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="170" parent="74" name="id_parents">
+      <Position>11</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="171" parent="74" name="eleve_pkey">
+      <ObjectId>60346</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_eleve</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="172" parent="74" name="eleve_pkey">
+      <ObjectId>60347</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_eleve</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>eleve_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="173" parent="74" name="fk9d4rkq6vhaieqbtn5l85lpqtr">
+      <ObjectId>60535</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_classe</ColNames>
+      <RefTableId>60307</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>classe</RefTableName>
+      <RefKeyName>classe_pkey</RefKeyName>
+      <RefColNames>id_classe</RefColNames>
+    </foreign-key>
+    <foreign-key id="174" parent="74" name="fkcns0erljsv3afoel48h5icwsu">
+      <ObjectId>60540</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_deliberation</ColNames>
+      <RefTableId>60321</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>deliberation</RefTableName>
+      <RefKeyName>deliberation_pkey</RefKeyName>
+      <RefColNames>id_deliberation</RefColNames>
+    </foreign-key>
+    <foreign-key id="175" parent="74" name="fkmef5exwk0uh5bwfg6a28pn0w7">
+      <ObjectId>60545</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_parents</ColNames>
+      <RefTableId>60413</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>parents</RefTableName>
+      <RefKeyName>parents_pkey</RefKeyName>
+      <RefColNames>id_parents</RefColNames>
+    </foreign-key>
+    <column id="176" parent="75" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="177" parent="75" name="id_cantine">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="178" parent="75" name="id_eleve">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="179" parent="75" name="eleve_cantines_pkey">
+      <ObjectId>60352</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="180" parent="75" name="eleve_cantines_pkey">
+      <ObjectId>60353</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>eleve_cantines_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="181" parent="75" name="fk5fi88kuj10sv1eq9m71bfagwi">
+      <ObjectId>60550</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_cantine</ColNames>
+      <RefTableId>60287</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>cantine</RefTableName>
+      <RefKeyName>cantine_pkey</RefKeyName>
+      <RefColNames>id_cantine</RefColNames>
+    </foreign-key>
+    <foreign-key id="182" parent="75" name="fksamg0jo08dfuvu8x2wtojyhpw">
+      <ObjectId>60555</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_eleve</ColNames>
+      <RefTableId>60341</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>eleve</RefTableName>
+      <RefKeyName>eleve_pkey</RefKeyName>
+      <RefColNames>id_eleve</RefColNames>
+    </foreign-key>
+    <column id="183" parent="76" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="184" parent="76" name="elevebyideleve_id_eleve">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="185" parent="76" name="transportbyidtransport_id_transport">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="186" parent="76" name="eleve_transports_pkey">
+      <ObjectId>60358</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="187" parent="76" name="eleve_transports_pkey">
+      <ObjectId>60359</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>eleve_transports_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="188" parent="76" name="fk5wgr2gja61yvuni024ditbriu">
+      <ObjectId>60560</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>elevebyideleve_id_eleve</ColNames>
+      <RefTableId>60341</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>eleve</RefTableName>
+      <RefKeyName>eleve_pkey</RefKeyName>
+      <RefColNames>id_eleve</RefColNames>
+    </foreign-key>
+    <foreign-key id="189" parent="76" name="fkjh8596rmp41tg0f79afvnyouh">
+      <ObjectId>60565</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>transportbyidtransport_id_transport</ColNames>
+      <RefTableId>60483</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>transport</RefTableName>
+      <RefKeyName>transport_pkey</RefKeyName>
+      <RefColNames>id_transport</RefColNames>
+    </foreign-key>
+    <column id="190" parent="77" name="id_emploi_du_temps">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="191" parent="77" name="dure_cours">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="192" parent="77" name="heure">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="193" parent="77" name="jour">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="194" parent="77" name="matiere">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="195" parent="77" name="prof">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="196" parent="77" name="classebyidclasse_id_classe">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="197" parent="77" name="promotionbyidpromotion_id_promotion">
+      <Position>8</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="198" parent="77" name="sallebyidsalle_id_salle">
+      <Position>9</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="199" parent="77" name="emploi_du_temps_pkey">
+      <ObjectId>60366</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_emploi_du_temps</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="200" parent="77" name="emploi_du_temps_pkey">
+      <ObjectId>60367</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_emploi_du_temps</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>emploi_du_temps_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="201" parent="77" name="fkm18it8t7m9swlpoqqein1rt2t">
+      <ObjectId>60570</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>classebyidclasse_id_classe</ColNames>
+      <RefTableId>60307</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>classe</RefTableName>
+      <RefKeyName>classe_pkey</RefKeyName>
+      <RefColNames>id_classe</RefColNames>
+    </foreign-key>
+    <foreign-key id="202" parent="77" name="fktflv2ajb90w0e583yd7jveofx">
+      <ObjectId>60580</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>promotionbyidpromotion_id_promotion</ColNames>
+      <RefTableId>60465</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>promotion</RefTableName>
+      <RefKeyName>promotion_pkey</RefKeyName>
+      <RefColNames>id_promotion</RefColNames>
+    </foreign-key>
+    <foreign-key id="203" parent="77" name="fkmlcq0pritpnvvjqwvwephd4b3">
+      <ObjectId>60575</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>sallebyidsalle_id_salle</ColNames>
+      <RefTableId>60471</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>salle</RefTableName>
+      <RefKeyName>salle_pkey</RefKeyName>
+      <RefColNames>id_salle</RefColNames>
+    </foreign-key>
+    <column id="204" parent="78" name="id_evaluation">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="205" parent="78" name="date_evaluation">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="206" parent="78" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="207" parent="78" name="titre_evaluation">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="208" parent="78" name="type_evaluation">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="209" parent="78" name="id_personnel">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="210" parent="78" name="evaluation_pkey">
+      <ObjectId>60374</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_evaluation</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="211" parent="78" name="evaluation_pkey">
+      <ObjectId>60375</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_evaluation</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>evaluation_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="212" parent="78" name="fkjflcy6j5qo4yxrdg9np43rub">
+      <ObjectId>60585</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_personnel</ColNames>
+      <RefTableId>60427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personnel</RefTableName>
+      <RefKeyName>personnel_pkey</RefKeyName>
+      <RefColNames>id_personnel</RefColNames>
+    </foreign-key>
+    <column id="213" parent="79" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="214" parent="79" name="classebyidclasse_id_classe">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="215" parent="79" name="evaluationbyevaluationidevaluation_id_evaluation">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="216" parent="79" name="evaluation_classes_pkey">
+      <ObjectId>60380</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="217" parent="79" name="evaluation_classes_pkey">
+      <ObjectId>60381</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>evaluation_classes_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="218" parent="79" name="fk5wltxjccqg1cc8bigjhm3jq3i">
+      <ObjectId>60590</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>classebyidclasse_id_classe</ColNames>
+      <RefTableId>60307</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>classe</RefTableName>
+      <RefKeyName>classe_pkey</RefKeyName>
+      <RefColNames>id_classe</RefColNames>
+    </foreign-key>
+    <foreign-key id="219" parent="79" name="fkpnfgfamhmf00ypi56uu8o4ujd">
+      <ObjectId>60595</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>evaluationbyevaluationidevaluation_id_evaluation</ColNames>
+      <RefTableId>60369</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>evaluation</RefTableName>
+      <RefKeyName>evaluation_pkey</RefKeyName>
+      <RefColNames>id_evaluation</RefColNames>
+    </foreign-key>
+    <column id="220" parent="80" name="id_inscription">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="221" parent="80" name="date_inscription">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="222" parent="80" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="223" parent="80" name="ideleve">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="224" parent="80" name="classebyidclasse_id_classe">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="225" parent="80" name="id_eleve">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="226" parent="80" name="id_promotion">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="227" parent="80" name="inscription_pkey">
+      <ObjectId>60386</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_inscription</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="228" parent="80" name="inscription_pkey">
+      <ObjectId>60387</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_inscription</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>inscription_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="229" parent="80" name="fk11oncuvbklmrh3c0remhclqkj">
+      <ObjectId>60600</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>classebyidclasse_id_classe</ColNames>
+      <RefTableId>60307</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>classe</RefTableName>
+      <RefKeyName>classe_pkey</RefKeyName>
+      <RefColNames>id_classe</RefColNames>
+    </foreign-key>
+    <foreign-key id="230" parent="80" name="fktqjwdqq859qdvvd72nhexk3k7">
+      <ObjectId>60610</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_eleve</ColNames>
+      <RefTableId>60341</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>eleve</RefTableName>
+      <RefKeyName>eleve_pkey</RefKeyName>
+      <RefColNames>id_eleve</RefColNames>
+    </foreign-key>
+    <foreign-key id="231" parent="80" name="fk1wn1erv85j1s7aqr72b3ks0gm">
+      <ObjectId>60605</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_promotion</ColNames>
+      <RefTableId>60465</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>promotion</RefTableName>
+      <RefKeyName>promotion_pkey</RefKeyName>
+      <RefColNames>id_promotion</RefColNames>
+    </foreign-key>
+    <column id="232" parent="81" name="username">
+      <Position>1</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11601</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="233" parent="81" name="password">
+      <Position>2</Position>
+      <DataType>varchar(8)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11601</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="234" parent="81" name="login_pkey">
+      <ObjectId>60798</ObjectId>
+      <StateNumber>11601</StateNumber>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="235" parent="81" name="login_pkey">
+      <ObjectId>60799</ObjectId>
+      <StateNumber>11601</StateNumber>
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>login_pkey</UnderlyingIndexName>
+    </key>
+    <column id="236" parent="82" name="id_matiere">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="237" parent="82" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="238" parent="82" name="nom_matiere">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="239" parent="82" name="matiere_pkey">
+      <ObjectId>60394</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_matiere</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="240" parent="82" name="matiere_pkey">
+      <ObjectId>60395</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_matiere</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>matiere_pkey</UnderlyingIndexName>
+    </key>
+    <column id="241" parent="83" name="id_niveau">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="242" parent="83" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="243" parent="83" name="nom_niveau">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="244" parent="83" name="id_cycle">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="245" parent="83" name="niveau_pkey">
+      <ObjectId>60402</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_niveau</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="246" parent="83" name="niveau_pkey">
+      <ObjectId>60403</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_niveau</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>niveau_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="247" parent="83" name="fkbrx14qisjsjrm336yg6l37or">
+      <ObjectId>60615</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_cycle</ColNames>
+      <RefTableId>60313</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>cycle_scolaire</RefTableName>
+      <RefKeyName>cycle_scolaire_pkey</RefKeyName>
+      <RefColNames>id_cycle</RefColNames>
+    </foreign-key>
+    <column id="248" parent="84" name="id_note_cours">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="249" parent="84" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="250" parent="84" name="personnel">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="251" parent="84" name="titre_cours">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="252" parent="84" name="personnelbypersonnel_id_personnel">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="253" parent="84" name="note_cours_pkey">
+      <ObjectId>60410</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_note_cours</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="254" parent="84" name="note_cours_pkey">
+      <ObjectId>60411</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_note_cours</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>note_cours_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="255" parent="84" name="fkq8qa1ypolj9o9e76l5pw0emsv">
+      <ObjectId>60620</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>personnelbypersonnel_id_personnel</ColNames>
+      <RefTableId>60427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personnel</RefTableName>
+      <RefKeyName>personnel_pkey</RefKeyName>
+      <RefColNames>id_personnel</RefColNames>
+    </foreign-key>
+    <column id="256" parent="85" name="id_parents">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="257" parent="85" name="attr_adresse">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="258" parent="85" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="259" parent="85" name="prenom_mere">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="260" parent="85" name="prenom_pere">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="261" parent="85" name="tel1">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="262" parent="85" name="tel2">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="263" parent="85" name="parents_pkey">
+      <ObjectId>60418</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_parents</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="264" parent="85" name="parents_pkey">
+      <ObjectId>60419</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_parents</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>parents_pkey</UnderlyingIndexName>
+    </key>
+    <column id="265" parent="86" name="id_payement">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="266" parent="86" name="date_payement">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="267" parent="86" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="268" parent="86" name="montant_payement">
+      <Position>4</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="269" parent="86" name="id_eleve">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="270" parent="86" name="payement_scolaire_pkey">
+      <ObjectId>60424</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_payement</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="271" parent="86" name="payement_scolaire_pkey">
+      <ObjectId>60425</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_payement</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>payement_scolaire_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="272" parent="86" name="fkp26smtqw8qvo8b8px099v9xvi">
+      <ObjectId>60625</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_eleve</ColNames>
+      <RefTableId>60341</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>eleve</RefTableName>
+      <RefKeyName>eleve_pkey</RefKeyName>
+      <RefColNames>id_eleve</RefColNames>
+    </foreign-key>
+    <column id="273" parent="87" name="id_personnel">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="274" parent="87" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="275" parent="87" name="login">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="276" parent="87" name="nom">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="277" parent="87" name="password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="278" parent="87" name="prenom">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="279" parent="87" name="roles">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="280" parent="87" name="tel">
+      <Position>8</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="281" parent="87" name="type">
+      <Position>9</Position>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="282" parent="87" name="id_ecole">
+      <Position>10</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="283" parent="87" name="personnel_pkey">
+      <ObjectId>60432</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_personnel</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="284" parent="87" name="personnel_pkey">
+      <ObjectId>60433</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_personnel</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>personnel_pkey</UnderlyingIndexName>
+    </key>
+    <column id="285" parent="88" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="286" parent="88" name="personnel">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="287" parent="88" name="id_classe">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="288" parent="88" name="personnelbypersonnel_id_personnel">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="289" parent="88" name="personnel_classes_pkey">
+      <ObjectId>60438</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="290" parent="88" name="personnel_classes_pkey">
+      <ObjectId>60439</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>personnel_classes_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="291" parent="88" name="fk6mkfu5c0uft7vh744wewibk1h">
+      <ObjectId>60635</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_classe</ColNames>
+      <RefTableId>60307</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>classe</RefTableName>
+      <RefKeyName>classe_pkey</RefKeyName>
+      <RefColNames>id_classe</RefColNames>
+    </foreign-key>
+    <foreign-key id="292" parent="88" name="fkrn4bbpmlcaop2d948akkka4n6">
+      <ObjectId>60640</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>personnelbypersonnel_id_personnel</ColNames>
+      <RefTableId>60427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personnel</RefTableName>
+      <RefKeyName>personnel_pkey</RefKeyName>
+      <RefColNames>id_personnel</RefColNames>
+    </foreign-key>
+    <column id="293" parent="89" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="294" parent="89" name="id_ecole">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="295" parent="89" name="id_personnel">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="296" parent="89" name="personnel_ecoles_pkey">
+      <ObjectId>60444</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="297" parent="89" name="personnel_ecoles_pkey">
+      <ObjectId>60445</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>personnel_ecoles_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="298" parent="89" name="fkt2my74inv59ed1jf002f1x6sf">
+      <ObjectId>60650</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_personnel</ColNames>
+      <RefTableId>60427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personnel</RefTableName>
+      <RefKeyName>personnel_pkey</RefKeyName>
+      <RefColNames>id_personnel</RefColNames>
+    </foreign-key>
+    <column id="299" parent="90" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="300" parent="90" name="matierebyidmatiere_id_matiere">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="301" parent="90" name="personnelbyidpersonnel_id_personnel">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="302" parent="90" name="personnel_matiere_pkey">
+      <ObjectId>60450</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="303" parent="90" name="personnel_matiere_pkey">
+      <ObjectId>60451</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>personnel_matiere_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="304" parent="90" name="fk6mpphcpiq0u2x0aure1sn3jik">
+      <ObjectId>60655</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>matierebyidmatiere_id_matiere</ColNames>
+      <RefTableId>60389</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>matiere</RefTableName>
+      <RefKeyName>matiere_pkey</RefKeyName>
+      <RefColNames>id_matiere</RefColNames>
+    </foreign-key>
+    <foreign-key id="305" parent="90" name="fkb7sje42u8w6qjqsnf6iu84ap3">
+      <ObjectId>60660</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>personnelbyidpersonnel_id_personnel</ColNames>
+      <RefTableId>60427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personnel</RefTableName>
+      <RefKeyName>personnel_pkey</RefKeyName>
+      <RefColNames>id_personnel</RefColNames>
+    </foreign-key>
+    <column id="306" parent="91" name="id_presence">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="307" parent="91" name="situation_presence">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="308" parent="91" name="id_eleve">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="309" parent="91" name="id_emploi_du_temps">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="310" parent="91" name="presence_pkey">
+      <ObjectId>60456</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_presence</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="311" parent="91" name="presence_pkey">
+      <ObjectId>60457</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_presence</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>presence_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="312" parent="91" name="fkcp4vlgta95h32uyyvt6cpoft1">
+      <ObjectId>60670</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_eleve</ColNames>
+      <RefTableId>60341</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>eleve</RefTableName>
+      <RefKeyName>eleve_pkey</RefKeyName>
+      <RefColNames>id_eleve</RefColNames>
+    </foreign-key>
+    <foreign-key id="313" parent="91" name="fk36qfahl1h7lp5p357o7qp27i9">
+      <ObjectId>60665</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_emploi_du_temps</ColNames>
+      <RefTableId>60361</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>emploi_du_temps</RefTableName>
+      <RefKeyName>emploi_du_temps_pkey</RefKeyName>
+      <RefColNames>id_emploi_du_temps</RefColNames>
+    </foreign-key>
+    <column id="314" parent="92" name="id_programme">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="315" parent="92" name="heure">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="316" parent="92" name="jour">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="317" parent="92" name="id_salle">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="318" parent="92" name="programme_reunion_pkey">
+      <ObjectId>60462</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_programme</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="319" parent="92" name="programme_reunion_pkey">
+      <ObjectId>60463</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_programme</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>programme_reunion_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="320" parent="92" name="fkb9386gqk3qvb1070qh59k03i">
+      <ObjectId>60675</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_salle</ColNames>
+      <RefTableId>60471</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>salle</RefTableName>
+      <RefKeyName>salle_pkey</RefKeyName>
+      <RefColNames>id_salle</RefColNames>
+    </foreign-key>
+    <column id="321" parent="93" name="id_promotion">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="322" parent="93" name="annee_scolaire">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="323" parent="93" name="promotion_pkey">
+      <ObjectId>60468</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_promotion</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="324" parent="93" name="promotion_pkey">
+      <ObjectId>60469</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_promotion</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>promotion_pkey</UnderlyingIndexName>
+    </key>
+    <column id="325" parent="94" name="id_salle">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="326" parent="94" name="nbre_place">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="327" parent="94" name="nom_salle">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="328" parent="94" name="numero_salle">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="329" parent="94" name="type">
+      <Position>5</Position>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="330" parent="94" name="id_batiment">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="331" parent="94" name="salle_pkey">
+      <ObjectId>60474</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_salle</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="332" parent="94" name="salle_pkey">
+      <ObjectId>60475</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_salle</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>salle_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="333" parent="94" name="fk6gq0s8qam6px72psjiqn3wnld">
+      <ObjectId>60680</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_batiment</ColNames>
+      <RefTableId>60281</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>batiment</RefTableName>
+      <RefKeyName>batiment_pkey</RefKeyName>
+      <RefColNames>id_batiment</RefColNames>
+    </foreign-key>
+    <column id="334" parent="95" name="id_serie">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>23</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="335" parent="95" name="nom_serie">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="336" parent="95" name="serie_pkey">
+      <ObjectId>60480</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_serie</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="337" parent="95" name="serie_pkey">
+      <ObjectId>60481</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_serie</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>serie_pkey</UnderlyingIndexName>
+    </key>
+    <column id="338" parent="96" name="id_transport">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11200</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="339" parent="96" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="340" parent="96" name="heure_transport">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="341" parent="96" name="zone_transport">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>11200</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="342" parent="96" name="transport_pkey">
+      <ObjectId>60488</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_transport</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="343" parent="96" name="transport_pkey">
+      <ObjectId>60489</ObjectId>
+      <StateNumber>11200</StateNumber>
+      <ColNames>id_transport</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>transport_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
