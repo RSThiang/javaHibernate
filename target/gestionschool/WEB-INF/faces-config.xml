@@ -148,6 +148,12 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
+        <managed-bean-name>navigationBean</managed-bean-name>
+        <managed-bean-class>Dao.NavigationBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+
         <managed-bean-name>loginDao</managed-bean-name>
         <managed-bean-class>daoClass.LoginDao</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
@@ -334,7 +340,7 @@
         </navigation-case>
         <navigation-case>
             <from-outcome>editEcole</from-outcome>
-            <to-view-id>/EditEcole.jsp</to-view-id>
+            <to-view-id>/EditEcole.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>pageinitiale</from-outcome>
@@ -351,6 +357,10 @@
         <navigation-case>
             <from-outcome>createEcole</from-outcome>
             <to-view-id>/CreateEcole.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>test</from-outcome>
+            <to-view-id>/test.xhtml</to-view-id>
         </navigation-case>
 
 

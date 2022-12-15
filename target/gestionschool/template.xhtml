@@ -22,7 +22,7 @@
      </style>
 
     <h:body>
-<ui:composition
+
         <div class="card">
             <div class="flex flex-column card-container blue-container">
                 <div class=" bg-blue-100 font-bold " style="size: 10px">
@@ -31,39 +31,29 @@
             </div>
         </div>
         <div class="card">
+            <b:row>
             <p:splitter style="height: 700px">
                 <p:splitterPanel size="20"  >
 
-                     <div class="card">
-                    <div class="speeddial-linear-demo" style="position: center" >
-                  <b:dropButton value="gestionEcole" styleClass="">
-                      <b:navLink  outcome="ecoleList" value="Etablissements"/>
-                      <b:navLink  outcome="#" value=""/>
-
-                  </b:dropButton>
-                        <b:dropButton value="Personnel" styleClass="sp">
-                            <b:navLink  outcome="#" value="Administration"/>
-                            <b:navLink  outcome="#" value=""/>
-
-                        </b:dropButton>
-                        <b:dropButton value="Eleves" styleClass="sp">
-                            <b:navLink  outcome="ecoleList" value="inscription"/>
-                            <b:navLink  outcome="ecoleList" value="eleves"/>
-                            <b:navLink  outcome="ecoleList" value="parent"/>
-                         </b:dropButton>
-                   </div>
-
-                     </div>
+                    <h:form>
+                     <div id="left">
+                        <ui:insert name="left">
+                            <div class="list-group">
+                             <p:commandLink styleClass="list-group-item" action="#{navigationBean.CheckUrl('/test.xhtml')}" update="mainpanel">Ecole</p:commandLink>
+                            </div>
+                        </ui:insert>
+                    </div>
+                    </h:form>
 
 
                 </p:splitterPanel>
                 <p:splitterPanel size="80">
-
-
-                  </p:splitterPanel>
+                          <ui:insert name="content">content</ui:insert>
+                   </p:splitterPanel>
 
             </p:splitter>
-        </div>
+          </b:row>
+          </div>
 
-    </h:body>
+     </h:body>
  </html>

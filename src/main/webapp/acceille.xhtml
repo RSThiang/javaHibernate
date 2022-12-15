@@ -38,118 +38,48 @@
         <div class="card">
             <p:splitter style="height: 500px">
                 <p:splitterPanel size="20" style="background-color:moccasin">
-                    <b:buttonGroup orientation="vertical" styleClass="downwards">
-                        <b:dropButton value="Gestion Utilisateurs">
-                            <b:navLink value="Eleves" />
-                            <b:navLink value="Enseignants" />
-                            <b:navLink value="Surveillants" />
-                            <b:navLink value="Secretaires" />
-                            <b:navLink value="Comptable" />
-                            <b:navLink value="Direction" />
-                            <b:navLink value="Prefets" />
-                            <b:navLink value="Parents" />
-                        </b:dropButton>
-                        <b:dropButton value="Gestion Inscription/réinscription">
-                            <b:navLink value="Inscription"/>
-                            <b:navLink value="Reinscription"/>
-                            <b:navLink value="Payement Scolaire"/>
-                        </b:dropButton>
-                        <b:dropButton value="Gestion Enseignements">
-                            <b:navLink value="Ecoles" />
+                    <h:form>
 
-                            <b:navLink value="Cycle Scolaire"/>
-                            <b:navLink value="Matiers"/>
+                    <b:dropMenu value="Gestion Batiment">
+                        <b:navLink value="Batiments"  update="@(.content)"
+                                   onclick="ajax:navigationBean.setPage('/test.xhtml')" />
+                        <b:navLink value="Salles" update="@(.content)"
+                                   onclick="ajax:navigationBean.setPage('/test2.xhtml')" />
+                    </b:dropMenu>
 
-                        </b:dropButton>
-                        <b:dropButton value="Gestion Emploi du temps">
-                            <b:navLink value=""/>
-                        </b:dropButton>
-                        <b:dropButton value="Gestion Activités Culturelles">
-                            <b:navLink value=""/>
-                        </b:dropButton>
-                        <b:dropButton value="Gestion Cantine">
-                            <b:navLink value=""/>
-                        </b:dropButton>
-                        <b:dropButton value="Gestion Transport">
-                            <b:navLink value=""/>
-                        </b:dropButton>
-                    </b:buttonGroup>
+                    </h:form>
+<!--                    <b:dropMenu value="Gestion Enseignement">-->
+<!--                        <b:navLink value="Promotion"  update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
+<!--                        <b:navLink value="Classe" update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
+<!--                        <b:navLink value="Serie" update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
+<!--                    </b:dropMenu>-->
+<!--                    <b:dropMenu Value="Gestion INscripton">-->
+<!--                        <b:navLink value="Inscription"  update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
 
+<!--                    </b:dropMenu>-->
+<!--                    <b:dropMenu value="Gestion Utilisateur">-->
+<!--                        <b:navLink value="Eleves"  update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
+<!--                        <b:navLink value="Parents d'eleves" update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
+<!--                        <b:navLink value="Personnel" update="@form @(.content)"-->
+<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
+
+<!--                    </b:dropMenu>-->
                 </p:splitterPanel>
-                <p:splitterPanel size="80">
-                    <b:navBar brand="Brand" brandHref="#" fluid="true">
-                        <b:navbarLinks>
-                            <b:navLink value="Link" href="#"></b:navLink>
-                            <b:navLink value="Link" href="#"></b:navLink>
-                            <b:dropMenu value="Dropdown" iconAwesome="birthday-cake">
-                                <b:navLink value="Action" href="#"></b:navLink>
-                                <b:navLink value="Another action" href="#"></b:navLink>
-                                <b:navLink value="Something else here" href="#"></b:navLink>
-                                <b:navLink></b:navLink>
-                                <b:navLink header="Nav header"></b:navLink>
-                                <b:navLink value="Separated link" href="#"></b:navLink>
-                                <b:dropMenu value="Nested submenu" iconAwesome="birthday-cake" iconAlign="right">
-                                    <b:navLink value="You can nest menus" href="#"></b:navLink>
-                                    <b:dropMenu value="Nested sub-submenu">
-                                        <b:navLink value="... as deep as ..." href="#"></b:navLink>
-                                        <b:dropMenu value="Nested sub-sub-submenu">
-                                            <b:navLink value="... you want!" href="#"></b:navLink>
-                                        </b:dropMenu>
-                                    </b:dropMenu>
-
-                                </b:dropMenu>
-                                <b:navLink value="One more separated link" href="#"></b:navLink>
-                            </b:dropMenu>
-                        </b:navbarLinks>
-
-                        <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
-                        <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
-                        <b:navbarLinks pull="right" styleClass="hidden-xs">
-                            <b:navLink value="Link" href="#"></b:navLink>
-                            <b:dropMenu value="Dropdown">
-                                <b:navLink value="Action" href="#"></b:navLink>
-                                <b:navLink value="Another action" href="#"></b:navLink>
-                                <b:navLink value="Something else here" href="#"></b:navLink>
-                                <b:navLink></b:navLink>
-                                <b:navLink header="Nav header"></b:navLink>
-                                <b:navLink value="Separated link" href="#"></b:navLink>
-                                <b:navLink value="One more separated link" href="#"></b:navLink>
-                            </b:dropMenu>
-                        </b:navbarLinks>
-                    </b:navBar>
-
+                 <p:splitterPanel size="80">
+                    <b:column  class="content">
+                        <ui:insert name="content">content</ui:insert>
+                    </b:column>
                 </p:splitterPanel>
             </p:splitter>
         </div>
 
-        <b:dropMenu value="Gestion Batiment">
-            <b:navLink value="Batiments"  update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-            <b:navLink value="Salles" update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-        </b:dropMenu>
-        <b:dropMenu value="Gestion Enseignement">
-            <b:navLink value="Promotion"  update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-            <b:navLink value="Classe" update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-            <b:navLink value="Serie" update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-        </b:dropMenu>
-        <b:dropMenu Value="Gestion INscripton">
-            <b:navLink value="Inscription"  update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
 
-        </b:dropMenu>
-        <b:dropMenu value="Gestion Utilisateur">
-            <b:navLink value="Eleves"  update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-            <b:navLink value="Parents d'eleves" update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-            <b:navLink value="Personnel" update="@form @(.content)"
-                       onclick="ajax:navigationBeans.setPage('#')" />
-
-        </b:dropMenu>
     </h:body>
 </f:view>
 </html>

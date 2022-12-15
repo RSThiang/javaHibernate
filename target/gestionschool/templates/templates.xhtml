@@ -9,10 +9,6 @@
       xmlns:b="http://bootsfaces.net/ui">
 
 <h:head>
-    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/arya-blue.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css"/>
 
 
 </h:head>
@@ -24,52 +20,90 @@
 <h:body>
     <ui:composition>
     <div class="card">
-        <div class="flex flex-column card-container" style="background: url(#{resource[ 'slides:img.jpg']})">
-            <div class="font-bold"  style="size: 7px; ">
-
+        <div class="card-container" style="background: url(#{resource[ 'slides:img.jpg']})">
               <div class="row">
-                  <p:spacer width="50px"/>
                   <div class="col-md-2">
-                      <h:graphicImage library="slides" name="téléchargement (1).png" alt="Valladolid" style="height: 100px;width: 150px"/>
+
                   </div>
-                 <div class="col-md-1">
-                     <h:outputText value="Sen-School" style="text-align: left;stop-color: whitesmoke;font-size: xx-large"/>
-                 </div>
-                  <div class="col-md-8" style="text-align: center">
-                      <p:spacer height="50px"/>
-                      <h:outputText value="Notre formation votre reuissite" style=" color: darkgray" />
-                   </div>
+
+                  <div class="col-md-5" style="text-align: center">
+                      <br/>
+                       <h:outputText value="ECOLE D'ENSEIGNEMENT" style=" color: darkgray;font-size: xx-large" />
+                      <br/>
+                  <h:outputText value="PRESCOLAIRE, PRIMAIRE, MOYEN SECONDAIRE ET LYCEE" style=" color: darkgray;font-size:small"/>
+                  </div>
+                  <div class="col-md-2">
+
+                  </div>
+                  <div class="col-md-1">
+                      <h:outputText value="Sen-School" style="text-align: left;stop-color: whitesmoke;font-size: xx-large"/>
+                  </div>
+                  <div class="col-md-1">
+                      <h:graphicImage library="slides" name="téléchargement (1).png" alt="Valladolid" style="height: 80px;width: 120px"/>
+                  </div>
+
              </div>
             </div>
 
-
         </div>
-    </div>
-    <div class="card">
+     <div class="card">
         <p:splitter style="height: 800px">
             <p:splitterPanel size="20"  >
+               <b:panel title="Gestion Ecole">
+                      <b:listLinks>
+                          <b:navLink value="Batiments"  update="@(.content)"
+                                                     onclick="ajax:navigationBean.setPage('/test.xhtml')"  style="font-size: large" />
+                          <b:navLink value="Salles" update="@(.content)"
+                                                     onclick="ajax:navigationBean.setPage('/test2.xhtml')" style="font-size: large" />
+                      </b:listLinks>
 
-                <div class="card">
-                    <div class="speeddial-linear-demo" style="position: center" >
-                        <b:dropButton value="gestionEcole" styleClass="">
-                            <b:navLink  outcome="ecoleList" value="Etablissements"/>
-                            <b:navLink  outcome="#" value=""/>
+                  </b:panel>
 
-                        </b:dropButton>
-                        <b:dropButton value="Personnel" styleClass="sp">
-                            <b:navLink  outcome="#" value="Administration"/>
-                            <b:navLink  outcome="#" value=""/>
+                  <b:panel title="Gestion Pyements Scolarite">
+                      <b:listLinks>
+                          <b:navLink value="Scolarités"  update="@(.content)"
+                                           onclick="ajax:navigationBeans.setPage('#')"  style="font-size: large"/>
+                      </b:listLinks>
+                  </b:panel>
 
-                        </b:dropButton>
-                        <b:dropButton value="Eleves" styleClass="sp">
-                            <b:navLink  outcome="ecoleList" value="inscription"/>
-                            <b:navLink  outcome="ecoleList" value="eleves"/>
-                            <b:navLink  outcome="ecoleList" value="parent"/>
-                        </b:dropButton>
-                    </div>
+                    <b:panel title="Gestion Enseignement" >
+                        <b:listLinks>
+                            <b:navLink value="Promotion"  update="@(.content)"
+                                           onclick="ajax:navigationBeans.setPage('#')" style="font-size: large"/>
+                            <b:navLink value="Classe" update="@(.content)"
+                                           onclick="ajax:navigationBeans.setPage('#')" style="font-size: large"/>
+                            <b:navLink value="Serie" update="@(.content)"
+                                           onclick="ajax:navigationBeans.setPage('#')" style="font-size: large"/>
+                        </b:listLinks>
+                    </b:panel>
 
-                </div>
+                    <b:panel title="Gestion INscripton">
+                        <b:listLinks>
+                            <b:navLink value="Inscription"  update=" @(.content)"
+                                           onclick="ajax:navigationBeans.setPage('#')" style="font-size: large" />
+                        </b:listLinks>
+                    </b:panel>
 
+                    <b:panel title="Gestion Utilisateur">
+                        <b:listLinks>
+                            <b:navLink value="Eleves"  update=" @(.content)"
+                                       onclick="ajax:navigationBeans.setPage('#')" style="font-size: large"/>
+                            <b:navLink value="Parents d'eleves" update=" @(.content)"
+                                       onclick="ajax:navigationBeans.setPage('#')" style="font-size: large"/>
+                            <b:navLink value="Personnel" update=" @(.content)"
+                                       onclick="ajax:navigationBeans.setPage('#')" style="font-size: large"/>
+                        </b:listLinks>
+
+                    </b:panel>
+
+                    <b:panel title="Gestion Cours">
+                        <b:listLinks>
+                            <b:navLink value="Cours"  update="@(.content)"
+                                           onclick="ajax:navigationBean.setPage('/test.xhtml')" style="font-size: large" />
+                            <b:navLink value="Emplois du temps" update="@(.content)"
+                                   onclick="ajax:navigationBean.setPage('/test2.xhtml')" style="font-size: large"/>
+                        </b:listLinks>
+                    </b:panel>
 
             </p:splitterPanel>
             <p:splitterPanel size="80">
