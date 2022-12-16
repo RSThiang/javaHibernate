@@ -48,7 +48,9 @@
 
                 </p:splitterPanel>
                 <p:splitterPanel size="80">
-                          <ui:insert name="content">content</ui:insert>
+                    <b:column  class="content">
+                    <ui:include src="#{navigationBean.page}" />
+                </b:column>
                    </p:splitterPanel>
 
             </p:splitter>

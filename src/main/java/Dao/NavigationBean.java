@@ -16,7 +16,7 @@ public class NavigationBean implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String page;
+    private String page ="pageinitial.xhtml";
     @PostConstruct
      public void Init(){
      }
@@ -28,26 +28,6 @@ public class NavigationBean implements Serializable {
     public void setPage(String currentPage) {
         this.page=currentPage;
     }
-
-//    private String url;
-//
-//    public NavigationBean() {
-//     }
-//     @PostConstruct
-//     public void Init(){
-//
-//     }
-//     public void CheckUrl(String url){
-//        this.url= url;
-//     }
-//
-//    public String getUrl() {
-//        return url;
-//    }
-//
-//    public void setUrl(String url) {
-//        this.url = url;
-//    }
 
 
 }

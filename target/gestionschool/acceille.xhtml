@@ -1,85 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:b="http://bootsfaces.net/ui"
->
-
-<f:view>
-    <h:head>
-        <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/arya-blue.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"  />
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="templates/templates.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core" >
 
 
-    </h:head>
-    <h:body>
+    <ui:define name="content">
+        <ui:include src="#{navigationBean.page}"/>
 
-    <div class="card">
-        <div class="flex flex-column card-container blue-container">
-            <div class="flex align-items-center justify-content-center h-3rem bg-blue-100 font-bold ">
-                <h1>ECOLE D'ENSEIGNEMENT</h1>
+    </ui:define>
 
-            </div>
-            <div class="flex align-items-center justify-content-center h-3rem bg-blue-100 font-bold ">
-
-                <h4>PRESCOLAIRE, PRIMAIRE, MOYEN SECONDAIRE ET LYCEE</h4>
-            </div>
-        </div>
-    </div>
-
-
-        <div class="card">
-            <p:splitter style="height: 500px">
-                <p:splitterPanel size="20" style="background-color:moccasin">
-                    <h:form>
-
-                    <b:dropMenu value="Gestion Batiment">
-                        <b:navLink value="Batiments"  update="@(.content)"
-                                   onclick="ajax:navigationBean.setPage('/test.xhtml')" />
-                        <b:navLink value="Salles" update="@(.content)"
-                                   onclick="ajax:navigationBean.setPage('/test2.xhtml')" />
-                    </b:dropMenu>
-
-                    </h:form>
-<!--                    <b:dropMenu value="Gestion Enseignement">-->
-<!--                        <b:navLink value="Promotion"  update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-<!--                        <b:navLink value="Classe" update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-<!--                        <b:navLink value="Serie" update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-<!--                    </b:dropMenu>-->
-<!--                    <b:dropMenu Value="Gestion INscripton">-->
-<!--                        <b:navLink value="Inscription"  update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-
-<!--                    </b:dropMenu>-->
-<!--                    <b:dropMenu value="Gestion Utilisateur">-->
-<!--                        <b:navLink value="Eleves"  update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-<!--                        <b:navLink value="Parents d'eleves" update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-<!--                        <b:navLink value="Personnel" update="@form @(.content)"-->
-<!--                                   onclick="ajax:navigationBeans.setPage('#')" />-->
-
-<!--                    </b:dropMenu>-->
-                </p:splitterPanel>
-                 <p:splitterPanel size="80">
-                    <b:column  class="content">
-                        <ui:insert name="content">content</ui:insert>
-                    </b:column>
-                </p:splitterPanel>
-            </p:splitter>
-        </div>
-
-
-    </h:body>
-</f:view>
-</html>
+</ui:composition>

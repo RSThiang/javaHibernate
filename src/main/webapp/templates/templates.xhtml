@@ -18,8 +18,7 @@
 </style>
 
 <h:body>
-    <ui:composition>
-    <div class="card">
+     <div class="card">
         <div class="card-container" style="background: url(#{resource[ 'slides:img.jpg']})">
               <div class="row">
                   <div class="col-md-2">
@@ -49,6 +48,7 @@
      <div class="card">
         <p:splitter style="height: 800px">
             <p:splitterPanel size="20"  >
+                <h:form>
                <b:panel title="Gestion Ecole">
                       <b:listLinks>
                           <b:navLink value="Batiments"  update="@(.content)"
@@ -62,7 +62,7 @@
                   <b:panel title="Gestion Pyements Scolarite">
                       <b:listLinks>
                           <b:navLink value="Scolarités"  update="@(.content)"
-                                           onclick="ajax:navigationBeans.setPage('#')"  style="font-size: large"/>
+                                           onclick="ajax:navigationBean.setPage('#')"  style="font-size: large"/>
                       </b:listLinks>
                   </b:panel>
 
@@ -79,7 +79,7 @@
 
                     <b:panel title="Gestion INscripton">
                         <b:listLinks>
-                            <b:navLink value="Inscription"  update=" @(.content)"
+                            <b:navLink value="Inscription"  update="@(.content)"
                                            onclick="ajax:navigationBeans.setPage('#')" style="font-size: large" />
                         </b:listLinks>
                     </b:panel>
@@ -104,15 +104,16 @@
                                    onclick="ajax:navigationBean.setPage('/test2.xhtml')" style="font-size: large"/>
                         </b:listLinks>
                     </b:panel>
-
+                </h:form>
             </p:splitterPanel>
             <p:splitterPanel size="80">
-
+                <b:column class="content">
+                    <ui:insert name="content">content</ui:insert>
+                </b:column>
 
             </p:splitterPanel>
 
         </p:splitter>
     </div>
-    </ui:composition>
-</h:body>
+ </h:body>
 </html>
